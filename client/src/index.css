@@ -5,10 +5,10 @@
 *{
   font-family: "Outfit", sans-serif;
 }
-/* :root{
+:root{
   background-color: black;
   color: white;
-} */
+}
 
 @theme {
   --color-primary: #2563EB;

@@ -41,10 +41,10 @@ const ManageBookings = () => {
 
         <Title title='Manage Bookings' subTitle='Track all customer bookings, approve or cancel requests, and manage booking statuses.' />
 
-        <div className='max-w-3xl w-full rounded-md overflow-hidden border border-borderColor mt-6'>
+        <div className='max-w-3xl w-full rounded-md overflow-hidden border border-blue-900 mt-6'>
 
             <table className='w-full border-collapse text-left text-sm text-gray-600'>
-                <thead className='text-gray-500'>
+                <thead className='text-gray-300'>
                     <tr>
                         <th className='p-3 font-medium'>Car</th>
                         <th className='p-3 font-medium max-md:hidden'>Date Range</th>
@@ -55,7 +55,7 @@ const ManageBookings = () => {
                 </thead>
                 <tbody>
                     {bookings.map((booking, index)=>(
-                        <tr key={index} className='border-t border-borderColor text-gray-500'>
+                        <tr key={index} className='border-t border-blue-900 text-gray-500'>
 
                             <td className='p-3 flex items-center gap-3'>
                                 <img src={booking.car.image} alt="" className='h-12 w-12 aspect-square rounded-md object-cover' />
@@ -74,7 +74,7 @@ const ManageBookings = () => {
 
                             <td className='p-3'>
                                 {booking.status === 'pending' ? (
-                                    <select onChange={e=> changeBookingStatus(booking._id, e.target.value)} value={booking.status} className='px-2 py-1.5 mt-1 text-gray-500 border border-borderColor rounded-md outline-none' >
+                                    <select onChange={e=> changeBookingStatus(booking._id, e.target.value)} value={booking.status} className='px-2 py-1.5 mt-1 text-gray-500 border border-blue-900 rounded-md outline-none' >
                                         <option value="pending">Pending</option>
                                         <option value="cancelled">Cancelled</option>
                                         <option value="confirmed">Confirmed</option>

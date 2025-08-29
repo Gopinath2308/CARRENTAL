@@ -35,7 +35,7 @@ const Testimonial = () => {
     ];
 
     const CreateCard = ({ card }) => (
-        <div className="p-4 rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 w-72 shrink-0">
+        <div className="p-4 rounded-lg mx-4  transition-all duration-200 w-72 shrink-0 border-1 border-cyan-900 shadow-[2px_2px_15px_rgba(0,255,255,0.2)] hover:shadow-[2px_3px_15px_rgba(0,255,255,0.3)]">
             <div className="flex gap-2">
                 <img className="size-11 rounded-full" src={card.image} alt="User Image" />
                 <div className="flex flex-col">
@@ -48,7 +48,7 @@ const Testimonial = () => {
                     <span className="text-xs text-slate-500">{card.location}</span>
                 </div>
             </div>
-            <p className="text-sm py-4 text-gray-800">{card.testimonial}</p>
+            <p className="text-sm py-4 text-gray-400">{card.testimonial}</p>
             <div className="flex items-center justify-between text-slate-500 text-xs">
                 <div className="flex items-center gap-1">
                     <span>Posted on</span>
@@ -80,23 +80,23 @@ const Testimonial = () => {
             <Title title="What Our Customers Say" subTitle="Discover why discerning travelers choose StayVenture for their luxury accommodations around the world." />
 
             <div className="marquee-row w-full mx-auto max-w-5xl overflow-hidden relative">
-                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"></div>
                 <div className="marquee-inner flex transform-gpu min-w-[200%] pt-10 pb-5">
                     {[...cardsData, ...cardsData].map((card, index) => (
                         <CreateCard key={index} card={card} />
                     ))}
                 </div>
-                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"></div>
             </div>
 
             <div className="marquee-row w-full mx-auto max-w-5xl overflow-hidden relative">
-                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"></div>
                 <div className="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] pt-10 pb-5">
                     {[...cardsData, ...cardsData].map((card, index) => (
                         <CreateCard key={index} card={card} />
                     ))}
                 </div>
-                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"></div>
             </div>
         </div>
             

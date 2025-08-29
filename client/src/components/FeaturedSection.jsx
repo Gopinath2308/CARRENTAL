@@ -32,7 +32,7 @@ const FeaturedSection = () => {
 
         <button onClick={() => {
             navigate('/cars'); scrollTo(0,0)
-        }} className='flex items-center justify-center gap-2 px-6 py-2 border border-borderColor hover:bg-gray-50 rounded-md mt-18 cursor-pointer'>
+        }} className='flex items-center justify-center gap-2 px-6 py-2 border border-cyan-500 hover:bg-cyan-500 hover:text-black rounded-md mt-18 cursor-pointer text-cyan-400'>
             Explore all cars <img src={assets.arrow_icon} alt='arrow' />     
              </button>
 

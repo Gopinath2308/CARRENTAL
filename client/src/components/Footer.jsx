@@ -1,12 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDuolingo } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
   return (
-    <div className='px-6 md:px-16 lg:px-24 xl:px-32 mt-60 text-sm text-gray-500'>
-            <div className='flex flex-wrap justify-between items-start gap-8 pb-6 border-borderColor border-b'>
+    <div className='px-6 md:px-16 lg:px-24 xl:px-32 mt-60 text-sm text-gray-400'>
+            <div className='flex flex-wrap justify-between items-start gap-8 pb-6 border-gray-600 border-b'>
                 <div>
-                    <img src={assets.logo} alt="logo" className='h-8 md:h-9' />
+                    <FontAwesomeIcon icon={faDuolingo} className='text-cyan-500 text-3xl' />&nbsp;&nbsp;&nbsp;<span className='text-3xl text-cyan-50'>DreamCarRent</span>
                     <p className='max-w-80 mt-3'>
                         Premium car rental service with a wide selection of luxury and everyday vehicles for all your driving needs.
                     </p>
@@ -19,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2 className='text-base font-medium text-gray-800 uppercase'>Quick Links</h2>
+                    <h2 className='text-base font-medium text-cyan-800 uppercase'>Quick Links</h2>
                     <ul className='mt-3 flex flex-col gap-1.5 text-sm'>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Browse Cars</a></li>
@@ -29,7 +32,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2 className='text-base font-medium text-gray-800 uppercase'>Resources</h2>
+                    <h2 className='text-base font-medium text-cyan-800 uppercase'>Resources</h2>
                     <ul className='mt-3 flex flex-col gap-1.5 text-sm'>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Terms of Service</a></li>
@@ -39,7 +42,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2 className='text-base font-medium text-gray-800 uppercase'>Contact</h2>
+                    <h2 className='text-base font-medium text-cyan-800 uppercase'>Contact</h2>
                     <ul className='mt-3 flex flex-col gap-1.5 text-sm'>
                         <li>1234 Luxury Drive</li>
                         <li>San Francisco, CA 94107</li>

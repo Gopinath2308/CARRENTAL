@@ -49,9 +49,9 @@ const Dashboard = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-8 max-w-3xl'>
             {dashboardCards.map((card, index)=>(
-                <div key={index} className='flex gap-2 items-center justify-between p-4 rounded-md border border-borderColor'>
+                <div key={index} className='flex gap-2 items-center justify-between p-4 rounded-md border border-blue-950 shadow-[4px_2px_20px_rgba(0,100,255,0.35)]'>
                     <div>
-                        <h1 className='text-xs text-gray-500'>{card.title}</h1>
+                        <h1 className='text-xs text-gray-400'>{card.title}</h1>
                         <p className='text-lg font-semibold'>{card.value}</p>
                     </div>
                     <div className='flex items-center justify-center w-10 h-10 rounded-full bg-primary/10'> 
@@ -64,9 +64,9 @@ const Dashboard = () => {
         <div className='flex flex-wrap items-start gap-6 mb-8 w-full'>
 
             {/* recent booking */}
-            <div className='p-4 md:p-6 border border-borderColor rounded-md max-w-lg w-full'>
+            <div className='p-4 md:p-6 border border-blue-950 shadow-[4px_2px_20px_rgba(0,100,255,0.35)] rounded-md max-w-lg w-full'>
                 <h1 className='text-lg font-medium'>Recent Bookings</h1>
-                <p className='text-gray-500'>Latest customer bookings</p>
+                <p className='text-gray-400'>Latest customer bookings</p>
                 {data.recentBookings.map((booking, index)=>(
                     <div key={index} className='mt-4 flex items-center justify-between'>
                         <div className='flex items-center gap-2'>
@@ -80,17 +80,17 @@ const Dashboard = () => {
                         </div>
 
                         <div className='flex items-center gap-2 font-medium'>
-                            <p className='text-sm text-shadow-gray-500'>{currency}{booking.price}</p>
-                            <p className='px-3 py-0.5 border border-borderColor rounded-full text-sm'>{booking.status}</p>
+                            <p className='text-sm text-shadow-gray-400'>{currency}{booking.price}</p>
+                            <p className='px-3 py-0.5 border border-blue-900 rounded-full text-sm'>{booking.status}</p>
                         </div>
                     </div>
                 ))}
             </div>
 
             {/* monthly revenue */}
-            <div className='p-4 md:p-6 mb-6 border border-borderColor rounded-md w-full md:max-w-xs'>
+            <div className='p-4 md:p-6 mb-6 border border-blue-950 shadow-[4px_2px_20px_rgba(0,100,255,0.35)] rounded-md w-full md:max-w-xs'>
                 <h1 className='text-lg font-medium'>Monthly Revenue</h1>
-                <p className='text-gray-500'>Revenue for current month</p>
+                <p className='text-gray-400'>Revenue for current month</p>
                 <p className='text-3xl mt-6 font-semibold text-primary'>{currency}{data.monthlyRevenue}</p>
             </div>
 
